@@ -39,4 +39,4 @@ Enable multiscale inference with `--multiscale-test=1`:
 python eval.py --model=models/ldn_semseg.py --reader=data/cityscapes/cityscapes_reader.py --dataset=/path/to/cityscapes --weights=/path/to/ldn121_weights_cityscapes_train.pt --multiscale-test=1
 ```
 
-Save color coded segmentations by with `--save-outputs=1`, the images will be saved in the `outputs` dir.
+Save color coded segmentations with `--save-outputs=1`, the images will be saved in the `./outputs` dir.
