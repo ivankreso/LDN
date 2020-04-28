@@ -1,5 +1,8 @@
 # Ladder-DenseNet
 
+Source code which reproduces the results from the paper  Efficient Ladder-Style DenseNets for Semantic Segmentation of Large Images (Ivan Krešo, Josip Krapac, Siniša Šegvić) published in IEEE Transactions on Intelligent Transportation Systems ([link](https://ieeexplore.ieee.org/document/9067100)). Previous work is available on arXiv ([link](https://arxiv.org/abs/1905.05661)).
+
+
 ## Requirements
 * Python (>= 3.7)
 ```
@@ -18,7 +21,7 @@ Place both `leftImg8bit` and `gtFine` dirs into the same dataset root dir `datas
 
 ### Download pre-trained weights
 
-Pre-trained Cityscapes models are available [here](https://drive.google.com/drive/folders/1VPIspBuXo0YEX4XU1aG3ojnqsdmqcXij?usp=sharing)
+Pre-trained Cityscapes models are available [here](https://drive.google.com/drive/folders/1VPIspBuXo0YEX4XU1aG3ojnqsdmqcXij?usp=sharing).
 * Download and extract the model to `model_path`.
 
 
@@ -30,6 +33,10 @@ Evaluate the model on Cityscapes validation subset:
 python eval.py --model=models/ldn_semseg.py --reader=data/cityscapes/cityscapes_reader.py --dataset=/path/to/cityscapes --weights=/path/to/ldn121_weights_cityscapes_train.pt
 ```
 
+Enable multiscale inference with `--multiscale-test=1`:
+
 ```
 python eval.py --model=models/ldn_semseg.py --reader=data/cityscapes/cityscapes_reader.py --dataset=/path/to/cityscapes --weights=/path/to/ldn121_weights_cityscapes_train.pt --multiscale-test=1
 ```
+
+Save color coded segmentations by with `--save-outputs=1`, the images will be saved in the `outputs` dir.
