@@ -1,7 +1,14 @@
 # Ladder-DenseNet
 
-Source code which reproduces the results from the paper  Efficient Ladder-Style DenseNets for Semantic Segmentation of Large Images (Ivan Krešo, Josip Krapac, Siniša Šegvić) published in IEEE Transactions on Intelligent Transportation Systems ([link](https://ieeexplore.ieee.org/document/9067100)). Previous work is available on arXiv ([link](https://arxiv.org/abs/1905.05661)).
+Source code which reproduces the results from the paper **Efficient Ladder-Style DenseNets for Semantic Segmentation of Large Images** (Ivan Krešo, Josip Krapac, Siniša Šegvić) published in IEEE Transactions on Intelligent Transportation Systems ([link](https://ieeexplore.ieee.org/document/9067100)). Previous work is available on arXiv ([link](https://arxiv.org/abs/1905.05661)).
 
+Demo video on Cityscapes dataset:
+
+<!-- <a href="http://www.youtube.com/watch?feature=player_embedded&v=QrB7Np_8GXY
+" target="_blank"><img src="http://img.youtube.com/vi/QrB7Np_8GXY/0.jpg"alt="" width="600" height="400" border="10" /></a> -->
+
+
+[![http://www.youtube.com/watch?v=QrB7Np_8GXY](http://img.youtube.com/vi/QrB7Np_8GXY/0.jpg)](http://www.youtube.com/watch?v=QrB7Np_8GXY)
 
 ## Requirements
 * Python (>= 3.7)
